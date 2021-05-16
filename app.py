@@ -51,22 +51,3 @@ def rank(rank1=rank1):
         first = rank_algo.rank_pd('database.csv')
         rank1 = list(first.keys())[0]
         return render_template('app.html', rank1=rank1)
-
-
-
-
-        # if operation == 'add':
-        #     sum = float(num1) + float(num2)
-        #     return render_template('app.html', sum=sum)
-        # elif operation == 'subtraction':
-        #     sum = float(num1) - float(num2)
-        #     return render_template('app.html', sum=sum)
-        # elif operation == 'multiply':
-        #     sum = float(num1) * float(num2)
-        #     return render_template('app.html', sum=sum)
-        # elif operation == 'divide':
-        #     sum = float(num1) / float(num2)
-        #     return render_template('app.html', sum=sum)
-        # else:
-        #     return render_template('app.html', sum=sum)
-    

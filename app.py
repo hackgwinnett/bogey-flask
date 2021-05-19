@@ -106,22 +106,4 @@ def rank(rank1=rank1):
                      mimetype='text/plain',
                      attachment_filename='rankings.txt',
                      as_attachment=True)
-
-
-
-
-        # if operation == 'add':
-        #     sum = float(num1) + float(num2)
-        #     return render_template('app.html', sum=sum)
-        # elif operation == 'subtraction':
-        #     sum = float(num1) - float(num2)
-        #     return render_template('app.html', sum=sum)
-        # elif operation == 'multiply':
-        #     sum = float(num1) * float(num2)
-        #     return render_template('app.html', sum=sum)
-        # elif operation == 'divide':
-        #     sum = float(num1) / float(num2)
-        #     return render_template('app.html', sum=sum)
-        # else:
-        #     return render_template('app.html', sum=sum)
     

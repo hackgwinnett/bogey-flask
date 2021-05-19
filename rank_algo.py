@@ -14,33 +14,3 @@ def rank_pd(filename):
 
 
 
-
-
-
-
-
-
-
-    #print(column)
-    #sorted_comps = sorted(column)
-    #print(sorted_comps)
-
-    #for val in sorted_comps:
-        #print("z")
-        #row = my_csv.loc[val]
-        #print(colored(row, "green"))
-        #print(row)
-        #print(row[0])
-        #final_vals[row[0]] = val
-        
-        # final_vals[row[0]].append(val)
-    
-        
-
-
-#  print(sorted(key_value.items(), key = 
-             # lambda kv:(kv[1], kv[0])))  
-
-
-
-

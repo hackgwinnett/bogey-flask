@@ -5,7 +5,7 @@
   <br/>
 </p>
 
-<h4>Projects are ranked on the following:</h4>
+<h4>Projects are ranked on the following [customizable] weights:</h4>
 <table class="tg">
 <thead>
   <tr>

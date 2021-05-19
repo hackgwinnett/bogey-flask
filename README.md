@@ -1,8 +1,8 @@
 # bogey-online
 <img src="https://raw.githubusercontent.com/hackgwinnett/bogey/main/icon-transp.png"/>
 <p>
-  Bogey is a Hackathon project judging application.<br/>
-  It uses a local database controlled by a CLI script to rank projects.<br/>
+  Bogey is a web app used to grade Hackathon projects.<br/>
+  <br/>
 </p>
 
 <h4>Projects are ranked on the following:</h4>

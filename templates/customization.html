@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Customization</title>
+    
+  <meta charset="utf-8">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta http-equiv="X-UA-Compatible" content="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ 
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="{{url_for('appfunc')}}">Home</a>
+              <a class="nav-link active" aria-current="page" href="{{url_for('customization')}}">Customization</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <h1 style="text-align:center;font-size:40px;">Customization</h1>
+        <form action="/customize" method="POST">
+
+          
+
+          <label for="Creativity Weight">Creativity Weight</label>
+          <input
+            type="text"
+            class="u-full-width"
+            name="Creativity Weight"
+            placeholder="Weight"
+          />
+  
+          <label for="Appearance Weight">Appearance Weight</label>
+          <input
+            type="text"
+            class="u-full-width"
+            name="Appearance Weight"
+            placeholder="Weight"
+          />
+  
+          <!--label for="Operation">Operation</label>
+          <select class="u-full-width" name="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+          </select--->
+          <label for="Complexity Weight">Complexity Weight</label>
+          <input
+            type="text"
+            class="u-full-width"
+            name="Complexity Weight"
+            placeholder="Weight"
+          />
+
+          <label for="Efficiency Weight">Efficiency Weight</label>
+          <input
+            type="text"
+            class="u-full-width"
+            name="Efficiency Weight"
+            placeholder="Weight"
+          />
+
+          <label for="Execution Weight">Execution Weight</label>
+          <input
+            type="text"
+            class="u-full-width"
+            name="Execution Weight"
+            placeholder="Weight"
+          />
+
+        <br>
+
+          <input type="submit" value="Calculate" id="calc_btn" />
+          
+          <br />
+          <div class="alert" style="text-align:center;">
+            {{ total }}
+          </div>
+        </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

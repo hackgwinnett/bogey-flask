@@ -1,0 +1,3 @@
+('Project 2', 9.0)
+('Project 3', 4.2)
+('Project 1', 1.2)

@@ -1,4 +1,4 @@
-# bogey-online
+# bogey-flask
 <img src="https://raw.githubusercontent.com/hackgwinnett/bogey/main/icon-transp.png"/>
 <p>
   Bogey is a simple web app used to grade Hackathon projects.<br/>

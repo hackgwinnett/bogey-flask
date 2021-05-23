@@ -9,5 +9,4 @@ def rank_pd(filename):
     print(res)
     final_vals = sorted(res.items(), key = lambda kv:(kv[1], kv[0]))
     final_vals = final_vals[::-1]
-    print(final_vals)
     return final_vals

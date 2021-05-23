@@ -64,12 +64,6 @@ def customize(total=total):
             total = "ERROR: Weights Did Not Add to 1"
             return render_template('customization.html', total=total)
 
-
-
-
-            
-   
-    
 @app.route('/send', methods=['POST'])
 def send(sum=sum):
     if request.method == "POST":
@@ -100,8 +94,6 @@ def rank(rank1=rank1):
         for element in rank1:
             textfile.write(str(element) + "\n")
         textfile.close()
-        #rank1 = str(first[0])
-        #return render_template('app.html', rank1=rank1)
         return send_file('static/rankings.txt',
                      mimetype='text/plain',
                      attachment_filename='rankings.txt',

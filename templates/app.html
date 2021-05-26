@@ -33,8 +33,9 @@
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="{{url_for('appfunc')}}">Home</a>
           <a class="nav-link active" aria-current="page" href="{{url_for('customization')}}">Customization</a>
-          <a class="nav-link" href="#">Docs</a>
-          <a class="nav-link" href="#">Other Resources</a>
+          <a class="nav-link active" href="{{url_for('cat')}}">Category Sort</a>
+          <a class="nav-link active" href="https://github.com/hackgwinnett/bogey-flask">Docs</a>
+          <a class="nav-link active" href="https://github.com/hackgwinnett">Other Resources</a>
         </div>
       </div>
     </div>
@@ -58,7 +59,7 @@
           />
 
 
-          <label for="Creativity">Creativity</label>
+          <label for="Creativity">{{cat1}}</label>
           <input
             type="text"
             class="u-full-width"
@@ -66,7 +67,7 @@
             placeholder="Score (Out of 10)"
           />
   
-          <label for="Appearance">Appearance</label>
+          <label for="Appearance">{{cat2}}</label>
           <input
             type="text"
             class="u-full-width"
@@ -81,7 +82,7 @@
             <option value="multiply">Multiply</option>
             <option value="divide">Divide</option>
           </select--->
-          <label for="Complexity">Complexity</label>
+          <label for="Complexity">{{cat3}}</label>
           <input
             type="text"
             class="u-full-width"
@@ -89,7 +90,7 @@
             placeholder="Score (Out of 10)"
           />
 
-          <label for="Efficiency">Efficiency</label>
+          <label for="Efficiency">{{cat4}}</label>
           <input
             type="text"
             class="u-full-width"
@@ -97,7 +98,7 @@
             placeholder="Score (Out of 10)"
           />
 
-          <label for="Execution">Execution</label>
+          <label for="Execution">{{cat5}}</label>
           <input
             type="text"
             class="u-full-width"

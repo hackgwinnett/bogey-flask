@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Customization</title>
+    
+  <meta charset="utf-8">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta http-equiv="X-UA-Compatible" content="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ 
+  <style>
+
+
+
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="{{url_for('appfunc')}}">Home</a>
+                <a class="nav-link active" aria-current="page" href="{{url_for('customization')}}">Customization</a>
+                <a class="nav-link active" href="{{url_for('cat')}}">Category Sort</a>
+                <a class="nav-link" href="#">Docs</a>
+                <a class="nav-link" href="#">Other Resources</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <h1 style="text-align:center;font-size:40px;">Category Sorting</h1>
+        <form action="/cat1method" method="POST">
+
+          
+
+          <label for="Creativity">{{cat1}}</label>
+          <input type="submit" value="Sort" id="rank_btn" />
+
+        </form>
+
+
+        <form action="/cat2method" method="POST">
+          <label for="Appearance">{{cat2}}</label>
+
+          <input type="submit" value="Sort" id="rank_btn" />
+
+        </form>
+          <!--label for="Operation">Operation</label>
+          <select class="u-full-width" name="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+          </select--->
+          <form action="/cat3method" method="POST">
+          <label for="Complexity">{{cat3}}</label>
+          
+          <input type="submit" value="Sort" id="rank_btn" />
+
+        </form>
+        <form action="/cat4method" method="POST">
+          <label for="Efficiency">{{cat4}}</label>
+         
+          <input type="submit" value="Sort" id="rank_btn" />
+
+        </form>
+        <form action="/cat5method" method="POST">
+          <label for="Execution">{{cat5}}</label>
+
+          <input type="submit" value="Sort" id="rank_btn" />
+
+
+        </form>
+        <br>
+
+          
+
+
+          
+      
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

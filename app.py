@@ -333,10 +333,12 @@ def send(sum=sum):
 @app.route('/rank', methods=['POST'])
 def rank(rank1=rank1):
     if request.method == 'POST':
+        cur = 0
         rank1 = rank_algo.rank_pd('database.csv')
         textfile = open('static/rankings.txt', 'w')
         for element in rank1:
-            textfile.write(str(element) + '\n')
+            cur += 1
+            textfile.write(str(cur) + '. ' + str(element) + '\n')
         textfile.close()
         return send_file('static/rankings.txt', mimetype='text/plain',
                          attachment_filename='rankings.txt',

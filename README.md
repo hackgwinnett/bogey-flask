@@ -46,8 +46,7 @@
  <h2>Home Page:</h2>
 
  1. Input a project's name and its scores in each respective category.
- 2. Hit the 'Calculate' button to save the project and its scores in CSV file hosted on a remote server.
-  <br>
+ 2. Hit the 'Calculate' button to save the project and its scores in CSV file hosted on a remote server.<br>
  3. 'Successful' should appear if all inputted values are of the correct data type.
  <br>
  4. Hit 'Rank' to see the current ranking of the inputted projects, in descending order.

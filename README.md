@@ -44,6 +44,10 @@
 
 <h1>Documentation/Usage</h1>
  <h2>Home Page:</h2>
+ * Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
  * Input a project's name and its scores in each respective category.
  * Hit the 'Calculate' button to save the project and its scores in CSV file hosted on a remote server.
  * Suc

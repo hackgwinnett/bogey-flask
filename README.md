@@ -50,3 +50,7 @@
  3. 'Successful' should appear if all inputted values are of the correct data type.<br>
  4. Hit 'Rank' to see the current ranking of the inputted projects, in descending order.<br>
 
+ <h2>Customization:</h2>
+
+ 1. You can change the weights of each category. Input the new weights, and ensure they add to 1. Hit 'Calculate'.
+ 2. Input new category names in 'Category Swap.' The names will now appear everywhere on the site. Changes may not take place immediately. Refresh the page if not.

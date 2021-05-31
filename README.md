@@ -58,3 +58,6 @@
  <h2>Category Sort</h2>
 
  1. Simply click 'Sort' next to the category you need rankings from. It will download a ranked list of scores sorted based on the category.
+
+
+If you used Bogey and enjoyed it/have any feedback, please let us know at @hackgwinnett@gmail.com or the contact form on hackgwinnett.org

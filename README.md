@@ -44,11 +44,13 @@
 
 <h1>Documentation/Usage</h1>
  <h2>Home Page:</h2>
- * Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
- * Input a project's name and its scores in each respective category.
- * Hit the 'Calculate' button to save the project and its scores in CSV file hosted on a remote server.
- * Suc
+
+ 1. Input a project's name and its scores in each respective category.
+  <br>
+ 2. Hit the 'Calculate' button to save the project and its scores in CSV file hosted on a remote server.
+  <br>
+ 3. 'Successful' should appear if all inputted values are of the correct data type.
+ <br>
+ 4. Hit 'Rank' to see the current ranking of the inputted projects, in descending order.
+ <br>
 

@@ -54,3 +54,7 @@
 
  1. You can change the weights of each category. Input the new weights, and ensure they add to 1. Hit 'Calculate'.
  2. Input new category names in 'Category Swap.' The names will now appear everywhere on the site. Changes may not take place immediately. Refresh the page if not.
+
+ <h2>Category Sort</h2>
+
+ 1. Simply click 'Sort' next to the category you need rankings from. It will download a ranked list of scores sorted based on the category.

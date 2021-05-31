@@ -39,5 +39,8 @@
 </table>
 <p>
   Judges can also rank projects based on a specific category listed above.<br/>
-  More categories can always be added to the script for a more holistic cumulative ranking.
+  The listed categories can be altered to suit the hackathon's needs.
 </p>
+
+<h1>Documentation/Usage<h1>
+ 

@@ -42,7 +42,6 @@
   The listed categories can be altered to suit the hackathon's needs.
 </p>
 
-<h1>Documentation/Usage<h1>
-  <p><p>
- <h2>Home Page:<h2>
- <p>
+<h1>Documentation/Usage</h1>
+ <h2>Home Page:</h2>
+

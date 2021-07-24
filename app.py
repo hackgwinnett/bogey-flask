@@ -19,7 +19,7 @@ rank1 = ''
 total = ''
 data = []
 
-cat1 = ''
+cat1 = 'Creativity'
 cat2 = ''
 cat3 = ''
 cat4 = ''
@@ -75,7 +75,7 @@ def main(
                                 quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow(fields)
 
-    print name1_global
+    print (name1_global)
     cat1 = name1_global
     cat2 = name2_global
     cat3 = name3_global
@@ -246,7 +246,7 @@ def customize2(
         name3 = request.form['Category 3']
         name4 = request.form['Category 4']
         name5 = request.form['Category 5']
-        print name5
+        print (name5)
     return render_template(
         'customization.html',
         name1=name1,
@@ -285,12 +285,24 @@ def customize(total=total):
 
 
 @app.route('/send', methods=['POST'])
-def send(sum=sum):
+def send(
+    sum=sum,
+    cat1=cat1,
+    cat2=cat2,
+    cat3=cat3,
+    cat4=cat4,
+    cat5=cat5
+    ):
     global creativity_list
     global appearance_list
     global complexity_list
     global efficiency_list
     global execution_list
+    cat1 = name1_global
+    cat2 = name2_global
+    cat3 = name3_global
+    cat4 = name4_global
+    cat5 = name5_global
     if request.method == 'POST':
 
         project_name = request.form['Project Name']
@@ -327,7 +339,7 @@ def send(sum=sum):
                                     quoting=csv.QUOTE_MINIMAL)
             csv_writer.writerow(data)
         sum = 'Successful'
-        return render_template('app.html', sum=sum)
+        return render_template('app.html', sum=sum,cat1=cat1,cat2=cat2,cat3=cat3,cat4=cat4,cat5=cat5)
 
 
 @app.route('/rank', methods=['POST'])

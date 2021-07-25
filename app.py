@@ -258,12 +258,24 @@ def customize2(
 
 
 @app.route('/customize', methods=['POST'])
-def customize(total=total):
+def customize(
+    total=total,
+    cat1_cus=cat1_cus,
+    cat2_cus=cat2_cus,
+    cat3_cus=cat3_cus,
+    cat4_cus=cat4_cus,
+    cat5_cus=cat5_cus
+    ):
     global creativity_weight
     global appearance_weight
     global complexity_weight
     global efficiency_weight
     global execution_weight
+    cat1_cus = name1_global + ' Weight'
+    cat2_cus = name2_global + ' Weight'
+    cat3_cus = name3_global + ' Weight'
+    cat4_cus = name4_global + ' Weight'
+    cat5_cus = name5_global + ' Weight'
     if request.method == 'POST':
         check = float(request.form['Creativity Weight']) \
             + float(request.form['Appearance Weight']) \
@@ -277,7 +289,7 @@ def customize(total=total):
             efficiency_weight = float(request.form['Efficiency Weight'])
             execution_weight = float(request.form['Execution Weight'])
             total = 'Success'
-            return render_template('customization.html', total=total)
+            return render_template('customization.html', total=total,cat1_cus=cat1_cus,cat2_cus=cat2_cus,cat3_cus=cat3_cus,cat4_cus=cat4_cus,cat5_cus=cat5_cus)
         else:
 
             total = 'ERROR: Weights Did Not Add to 1'
